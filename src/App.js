@@ -1,22 +1,21 @@
 import React, { Component } from 'react';
 
-import {BrowserRouter } from 'react-router-dom';
-
-import AppRoutes from './utils/Routes';
-
 import GlobalContext from './context/GlobalContext';
 
-import Main from './Main/main';
+import Home from './home/Home';
+
+import Layout from './_ui-layout/Layout';
 
 
 export default class App extends Component {
   render() {
     return (
       <GlobalContext>
-      <BrowserRouter>
-      <Main/>
-        {/* <AppRoutes/> */}
-      </BrowserRouter>
+      <div>
+        <Layout>
+          <Home/>
+        </Layout>
+      </div>
       </GlobalContext>
       
     );

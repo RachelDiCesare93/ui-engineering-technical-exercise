@@ -1,0 +1,41 @@
+
+/* Mobile  */
+
+.avatar {
+width: auto;
+margin: 10px;
+padding: 10px;
+text-align: center;
+}
+
+.avatar .photo {
+ width: 110px;
+ height: 110px;
+ padding: 10px;
+ overflow: hidden;
+}
+
+.avatar img {
+width: 100%;
+height: auto;
+}
+
+.avatar span {
+display: block;
+text-align: center;
+margin-top: 5px;
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 700px) {
+    .avatar {
+        height: 270px;
+    }
+
+    .avatar .photo {
+        width: 168px;
+        height: 168px;
+    }
+}

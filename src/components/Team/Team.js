@@ -11,7 +11,7 @@ export default class Team extends Component {
       return (
          <React.Fragment>
              <h1>Our Team</h1>
-             <div>
+             <div className="row">
                  <Context.Consumer>
                      {context => 
                          context.avatars.map((data, index) => {
